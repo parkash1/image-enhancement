@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main container styles */
+.image-enhancement-container {
+    background-color: #2a2a2a;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+/* Header styling */
+h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(to right, #ff007f, #d500f9);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Upload section styling */
+.upload-section {
+    margin-bottom: 20px;
+}
+
+.upload-section input[type="file"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.upload-section input[type="file"]:hover {
+    background-color: #0056b3;
+}
+
+/* Image display section */
+.images-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.image-container {
+    width: 45%;
+    border: 2px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.image-container .placeholder {
+    font-size: 1rem;
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Filter section */
+.filter-section {
+    margin-top: 30px;
+}
+
+.filter-section select,
+.filter-section button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #ff007f;
+    color: white;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.filter-section select:hover,
+.filter-section button:hover {
+    background-color: #d500f9;
+}
+
+/* Canvas container styling */
+canvas {
+    max-width: 100%;
+    border-radius: 8px;
+    border: 2px solid #444;
+}
+
+/* Description container */
+.description-container {
+    margin-top: 20px;
+}
+
+.description {
+    font-size: 16px;
+    color: #f1f1f1;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 1.5;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    .images-section {
+        flex-direction: column;
+    }
+
+    .image-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .filter-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-section select,
+    .filter-section button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
